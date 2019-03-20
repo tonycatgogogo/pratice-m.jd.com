@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no,
+        initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>仿京东移动web</title>
+</head>
+<!--版心-->
+<!--
+1.最大宽度设置成了640px
+2.设计稿psd的尺寸就是640px
+3.目的：当设备的尺寸比设计稿不至于失真
+4.640px的尺寸设计稿的原因：根据当前主要流行的设备尺寸有关系iphone4,4s 尺寸320px
+5.750px的设计稿：参考原型iphone6 尺寸375px
+6.最小宽度320px  保证最小的宽度320px不让页面错乱
+-->
+<body>
+<div class="jd_container">
+  <header class="jd_search">
+    <div class="jd_search_box">
+      <a href="#" class="icon_logo"></a>
+      <form action="#">
+        <span class="icon_search"></span>
+        <input type="search" placeholder="搜索">
+      </form>
+      <a href="#" class="jd_login">登录</a>
+    </div>
+  </header>
+  <div class="jd_banner">
+    <ul>
+      <li><a href="#"><img src="images/l8.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l1.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l2.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l3.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l4.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l5.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l6.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l7.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l8.jpg" alt="轮播图"></a></li>
+      <li><a href="#"><img src="images/l1.jpg" alt="轮播图"></a></li>
+    </ul>
+    <ul>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <nav class="jd_nav">
+    <ul class="clearFloat">
+      <li><a href="#"><img src="images/nav0.png" alt="导航栏"><p>分类</p></a></li>
+      <li><a href="#"><img src="images/nav1.png" alt="导航栏"><p>分类</p></a></li>
+      <li><a href="#"><img src="images/nav2.png" alt="导航栏"><p>分类</p></a></li>
+      <li><a href="#"><img src="images/nav3.png" alt="导航栏"><p>分类</p></a></li>
+      <li><a href="#"><img src="images/nav4.png" alt="导航栏"><p>分类</p></a></li>
+      <li><a href="#"><img src="images/nav5.png" alt="导航栏"><p>分类</p></a></li>
+      <li><a href="#"><img src="images/nav6.png" alt="导航栏"><p>分类</p></a></li>
+      <li><a href="#"><img src="images/nav7.png" alt="导航栏"><p>分类</p></a></li>
+    </ul>
+  </nav>
+  <main class="jd_product">
+    <section class="jd_product_box sk">
+      <div class="title">
+        <div class="f_l">
+          <span class="icon_time"></span>
+          <p class="kill">掌上秒杀</p>
+          <ul class="time">
+            <li>0</li>
+            <li>0</li>
+            <li>:</li>
+            <li>0</li>
+            <li>0</li>
+            <li>:</li>
+            <li>0</li>
+            <li>0</li>
+          </ul>
+        </div>
+        <div class="f_r">
+          <p class="more"><a href="#">更多&gt;</a></p>
+        </div>
+      </div>
+      <div class="content">
+        <ul class="pro clearFloat">
+          <li>
+            <a href=""><img src="images/detail01.jpg" alt=""></a>
+            <p class="nowPrice">&yen;10</p>
+            <p class="oldPrice">&yen;100</p>
+          </li>
+          <li>
+            <a href=""><img src="images/detail02.jpg" alt=""></a>
+            <p class="nowPrice">&yen;10</p>
+            <p class="oldPrice">&yen;100</p>
+          </li>
+          <li>
+            <a href=""><img src="images/detail01.jpg" alt=""></a>
+            <p class="nowPrice">&yen;10</p>
+            <p class="oldPrice">&yen;100</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="jd_product_box">
+      <div class="title"><h3>京东超市</h3></div>
+      <div class="content clearFloat">
+        <a class="w_50p f_l br" href="#"><img src="images/cp1.jpg" alt="商品图片"></a>
+        <a class="w_50p f_r bb" href="#"><img src="images/cp2.jpg" alt="商品图片"></a>
+        <a class="w_50p f_r " href="#"><img src="images/cp3.jpg" alt="商品图片"></a>
+      </div>
+    </section>
+    <section class="jd_product_box">
+      <div class="title"><h3>京东自营</h3></div>
+      <div class="content clearFloat">
+        <a class="w_50p f_r bl" href="#"><img src="images/cp4.jpg" alt="商品图片"></a>
+        <a class="w_50p f_r bb" href="#"><img src="images/cp5.jpg" alt="商品图片"></a>
+        <a class="w_50p f_r " href="#"><img src="images/cp6.jpg" alt="商品图片"></a>
+      </div>
+    </section>
+    <section class="jd_product_box">
+      <div class="title"><h3>京东热门</h3></div>
+      <div class="content clearFloat">
+        <a class="w_50p f_l br" href="#"><img src="images/cp1.jpg" alt="商品图片"></a>
+        <a class="w_50p f_r bb" href="#"><img src="images/cp2.jpg" alt="商品图片"></a>
+        <a class="w_50p f_r " href="#"><img src="images/cp3.jpg" alt="商品图片"></a>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+<script src="js/index.js"></script>
+<script src="js/common.js"></script>
+</html>
