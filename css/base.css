@@ -1,0 +1,61 @@
+html, body, div, ul, p, a, span, header, main,
+footer, aside, article, h1, h2, h3, h4, h5, h6,form,input,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei', sans-serif;
+  /*移动端常用布局是非固定像素*/
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  display: block;
+}
+
+input,textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+.clearFloat {
+  zoom: 1;
+}
+.clearFloat::before,
+.clearFloat::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height:0;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+/*使用精灵图的统一格式*/
+[class^="icon_"],[class*=" icon_"] {
+  background-image: url("../images/sprites.png");
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
